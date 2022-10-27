@@ -1,7 +1,8 @@
-package cn.itcast.order.clients;
+package com.hzh.feign.clients;
 
-import cn.itcast.order.pojo.User;
+import com.hzh.feign.pojo.User;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author DAHUANG
  * @date 2022/10/25
  */
-
 @FeignClient("userservice")
 public interface UserClient {
 

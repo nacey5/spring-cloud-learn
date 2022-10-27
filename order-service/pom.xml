@@ -46,6 +46,22 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <!--feign依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--引入httpClient依赖-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+        </dependency>
+        <!--引入自定义feign的api模块-->
+        <dependency>
+            <groupId>cn.itcast.demo</groupId>
+            <artifactId>feign-api</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
